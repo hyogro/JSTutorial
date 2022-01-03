@@ -32,7 +32,7 @@
             let messageToSend = document.getElementById("messageToSend")
             const sendData = { message: messageToSend.value };
             try {
-                window.webkit.messageHandlers.callbackHadnler.postMessage(sendData);
+                window.webkit.messageHandlers.callbackHandler.postMessage(sendData);
                 messageToSend.value = "";
             } catch (err) {
                 alert(err);
