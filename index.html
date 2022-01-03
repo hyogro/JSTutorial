@@ -18,14 +18,6 @@
             }
         }
 
-        function showAndroidToast() {
-            let androidMessage = document.getElementById("androidMessage")
-            console.log('showAndroidToast :', androidMessage);
-
-            Android.showToast(andoridMessage.value);
-            androidMessage.value = "";
-        }
-
         function jsToNativeEventCall() {
             let messageToSend = document.getElementById("messageToSend")
             const sendData = { message: messageToSend.value };
